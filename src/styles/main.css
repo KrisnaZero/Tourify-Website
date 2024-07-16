@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0
+}
+
+
+/* Navbar CSS */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav_list {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4A55A2;
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: #4A55A2;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: #4A55A2;
+  cursor: pointer;
+}
+
+/* Main content below fixed navbar */
+main {
+  padding-top: 80px; /* Adjust this value to match your navbar height */
+}
+
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #4A55A2;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: #4A55A2;
+  border-bottom-color: #4A55A2;
+  color: #4A55A2;
+}
+
+.section1 {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%234A55A2'/%3E%3Cstop offset='1' stop-color='%234A55A2'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%234A55A2'/%3E%3Cstop offset='1' stop-color='%234A55A2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.section2 {
+  background-color: #dbdbdb;
+  }
+.section3 {
+    background-color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+  letter-spacing: 5px;
+  color: #7895CB;
+}
+
+
+.hire__me {
+  color: #7895CB;
+}
+
+.hire__me:hover {
+  color: #4A55A2;
+}
+
+.portfolio {
+  color: #4A55A2;
+  border: #7895CB;
+  outline: #7895CB;
+}
+
+.portfolio:hover {
+  background-color: #4A55A2;
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(30rem, 100%);
+  border-radius: 100%;
+  flex: 1;
+  display: flex;
+}
+#avatar {
+  width: min(30rem, 100%);
+  border-radius: 100%;
+  height: auto;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+   
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+   
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color:#ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  border: 2px solid #4A55A2;
+  border-right: none;
+}
+   
+main aside .social-media img {
+  max-width: 50px;
+}
+   
+main aside .social-media li a:hover {
+  color: #89b0d9;
+
+}
+main aside .social-media P {
+  color: #4A55A2;
+  font-weight: bold;
+}
+footer {
+  background-color: #4A55A2;
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.text-footer {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (width < 750px) {
+  main aside {
+    display: none;
+  }
+
+  .section1{
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  nav .checkbox {
+    display: 90px;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: #312121;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+  main aside .social-media P {
+    color: rgba(255, 255, 255, 0);
+}
+}
+@media (width < 1000px){
+  main aside {
+    display: none;
+  }
+  main aside .social-media img {
+    max-width: 35px;
+  }
+  main aside .social-media P {
+    font-size: 10px;
+    color: #4A55A2;
+  }
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+}
+
+#Home{
+  height: auto;
+  position: relative;
+  animation: moveBackground 30s linear infinite;
+}
+@keyframes moveBackground {
+  0%, 70% {
+    background-position-y: 0;
+  }
+  30% {
+    background-position-y: 100%;
+  }
+}

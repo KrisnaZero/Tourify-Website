@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="head" w3-include-html="../templates/partial/head.html"></div>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <div class="nav_list">
+                <div class="logo"><a href="#">Tourify</a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check" />
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./metode.html">Metode Topsis</a></li>
+                    <li><a href="./perhitungan.html">Perhitungan</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <section id="Metode" class="section2">
+            <div class="section__container">
+                <article class="content-about">
+                    <p class="subtitle">APA ITU METODE TOPSIS ?</p>
+                    <h1 class="title">
+                        Metode <span>Topsis <br />
+                    </h1>
+                    <p class="description text-justify">
+                        TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) adalah metode pengambilan keputusan multi-kriteria yang digunakan untuk merangking alternatif berdasarkan jarak relatif mereka terhadap solusi ideal. Dalam konteks Tourify, TOPSIS digunakan untuk membandingkan dan merangking destinasi wisata berdasarkan kriteria seperti jarak ke pusat kota, rating Google Maps, dan jumlah pengunjung tahunan. Metode ini memungkinkan Tourify untuk memberikan rekomendasi destinasi yang paling sesuai dengan preferensi pengguna dengan cara yang sistematis dan objektif.
+                    </p>
+                </article>
+            </div>
+            <div id="aside" w3-include-html="../templates/aside.html"></div>
+        </section>
+
+        <section id="content" tabindex="0">
+            <main id="mainContent"></main>
+          </section>
+    </main>
+    <!--Footer-->
+    <div id="footer" w3-include-html="../templates/partial/footer.html"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.15.4/js/bootstrap.min.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "tourify.apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src "
+  },
+  "keywords": [],
+  "author": "your_name <your.email@domain.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
