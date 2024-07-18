@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<div id="head" w3-include-html="../templates/partial/head.html"></div>
+<div id="head" w3-include-html="partial/head.html"></div>
 
 <body>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/perhitungan.js"></script>
     <!--Header-->
-    <div id="navbar" w3-include-html="../templates/partial/navbar.html"></div>
+    <div id="navbar" w3-include-html="partial/navbar.html"></div>
 
     <!--Main-->
     <main>
@@ -21,10 +23,10 @@
                     </p>
                 </article>
                 <div id="avatar" class="image">
-                    <img src="../public/image/hero.svg" alt="profile" />
+                    <img src="/image/hero.svg" alt="profile" />
                 </div>
             </div>
-            <div id="aside" w3-include-html="../templates/aside.html"></div>
+            <div id="aside" w3-include-html="aside.html"></div>
         </section>
 
         <section id="content" tabindex="0">
@@ -32,11 +34,10 @@
           </section>
     </main>
     <!--Footer-->
-    <div id="footer" w3-include-html="../templates/partial/footer.html"></div>
+    <div id="footer" w3-include-html="partial/footer.html"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
