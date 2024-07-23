@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server src "
+    "start": "live-server"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
